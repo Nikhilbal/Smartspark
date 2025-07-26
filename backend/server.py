@@ -85,7 +85,7 @@ async def chat(chat_request: ChatMessage):
             api_key=OPENAI_API_KEY,
             session_id=conversation_id,
             system_message="You are SmartSpark, a helpful and intelligent AI assistant. You are creative, knowledgeable, and always ready to help users with their questions and tasks."
-        ).with_model("openai", "gpt-4.1")
+        ).with_model("openai", "gpt-4o-mini")
         
         # Send message to OpenAI
         user_msg = UserMessage(text=chat_request.message)
