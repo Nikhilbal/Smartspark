@@ -51,6 +51,11 @@
 .delay-100 {
   animation-delay: 0.1s;
 }
+/* Hides the "Made with Emergent" badge */
+a[href*="emergent"], 
+a[href*="Emergent"] {
+    display: none !important;
+}
 
 .delay-200 {
   animation-delay: 0.2s;
